@@ -1,0 +1,29 @@
+<div ng-controller="asyncCtrl">
+
+  <h1>
+    <span style="float: left; width: 50px; "><i ng-if="$root.isLoading"  class="fa fa-cog fa-spin" ></i><i ng-if="!$root.isLoading" class="fa fa-cloud"></i></span> async
+  </h1>
+  
+  <div class="row">
+  	<div class="col-md-4">
+			<ol>
+				<li ng-repeat="item in lists.sequence track by $index">{{item}}</li>
+			</ol>
+  	</div>
+  	<div class="col-md-4">
+			<ul>
+				<li>
+					<label>Period:</label> {{selections.period}}
+				</li>
+				<li>
+						<label>Description:</label> {{selections.description}}
+				</li>
+			</ul>
+  	</div>
+  	<div class="col-md-4">
+			
+  	</div>
+  </div>
+    
+
+</div>

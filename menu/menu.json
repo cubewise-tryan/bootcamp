@@ -1,0 +1,10 @@
+[
+  {
+    "label": "async",
+    "icon_class": "fa-cloud",
+    "data": {
+      "page": "async"
+    },
+    "expanded": false
+  }
+]

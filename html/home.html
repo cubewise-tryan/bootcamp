@@ -1,0 +1,23 @@
+<div ng-controller="HomeCtrl">
+  <h1><i class="fa fa-home"></i> {{'HOME' | translate}}</h1>
+
+  <div>
+    Best App $watch: {{page.bestApp$rootScope}}
+  </div>
+  <div>
+    Version $watch: {{page.version$rootScope}}
+  </div>
+  <div>
+    Best App $on: {{page.bestApp$On}}
+  </div>
+  <div>
+    Version $on: {{page.version$On}}
+  </div>
+  <pre>header:{{header | json}}</pre>
+  <tm1-ui-subnm tm1-instance="dev" tm1-dimension="Version" tm1-default-element="{{defaults.version}}" ng-model="header.version" tm1-bind-model="true" tm1-change="emitFromSubnm()"></tm1-ui-subnm>
+  
+</div>
+   
+ 
+ 
+  

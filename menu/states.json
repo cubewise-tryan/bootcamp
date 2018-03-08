@@ -1,0 +1,6 @@
+{
+  "async": {
+    "url": "/async",
+    "templateUrl": "html/async.html"
+  }
+}
